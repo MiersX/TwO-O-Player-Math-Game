@@ -1,12 +1,10 @@
 class Questions
 
   attr_accessor :turn, :player1, :player2
-  
-  
+   
   def initialize
     @turn = 1
   end
-
 
   def generate_question
     x = rand(1..10)

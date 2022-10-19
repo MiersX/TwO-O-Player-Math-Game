@@ -11,13 +11,10 @@ class Game
     @player2 = 3
   end
 
-  
-
   def start_game
     puts "Welcome to the Math Game! Get ready players..."
     new_round()
   end
-
 
   def new_round
     newQuestions = Questions.new
@@ -31,7 +28,6 @@ class Game
     if p2 == 1
       @player2 -= 1
     end
-
     check_scores()
   end
 
@@ -44,7 +40,6 @@ class Game
     if @player1 == 0 || @player2 == 0
       game_ends()
     end
-
   end
 
   def game_ends
@@ -65,8 +60,6 @@ class Game
     puts "Good bye!"
     exit(0)
   end
-
-
 end
 
 
